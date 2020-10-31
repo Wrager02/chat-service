@@ -1,6 +1,8 @@
 <template>
   <div id="group">
     <h1>{{group.name}}</h1>
+    <router-link :to="{ name: 'chat', params: { url: url, type: 'allgemein' }}">Allgemein</router-link>
+    <router-link :to="{ name: 'chat', params: { url: url, type: 'wichtig' }}">Wichtig</router-link>
     <router-view/>
   </div>
 </template>
